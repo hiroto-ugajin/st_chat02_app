@@ -44,7 +44,7 @@ if st.button("送信"):
         messages=[
             {"role": "system", "content": "You are a helpful ethicist. Please, correct user's message."},
             {"role": "user", "content": user_input}],
-        temperature = 0.2,
+        temperature = 1.0,
         max_tokens=600
     )
     # 返答の取得と出力
