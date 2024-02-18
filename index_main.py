@@ -1,9 +1,15 @@
 from openai import OpenAI
+# 2/18追加
+import openai
+
 import streamlit as st
 from PIL import Image
 import os
 
 client = OpenAI()
+
+# 2/18追加
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # # OpenAI APIキーを環境変数から取得
 # api_key = os.environ.get('OPENAI_API_KEY')
